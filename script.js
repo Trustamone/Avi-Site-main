@@ -21,10 +21,18 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-var element = document.getElementById('baruch-container')
+var baruchLink = document.getElementById('baruch-container')
 
-element.addEventListener("click", func);
-function func(){ 
+baruchLink.addEventListener("click", openBaruch);
+function openBaruch(){ 
   window.open(
     "https://www.baruch.cuny.edu/", "_blank");
+};
+
+var nyuLink = document.getElementById('nyu-container')
+
+nyuLink.addEventListener("click", openNYU);
+function openNYU(){ 
+  window.open(
+    "https://www.nyu.edu/", "_blank");
 };
