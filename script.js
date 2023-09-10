@@ -20,3 +20,11 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+var element = document.getElementById('baruch-container')
+
+element.addEventListener("click", func);
+function func(){ 
+  window.open(
+    "https://www.baruch.cuny.edu/", "_blank");
+};

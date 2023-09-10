@@ -165,7 +165,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+/* height: 96vs */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -513,11 +513,17 @@ img.Baruch {
   bottom: 2.5rem;
   opacity: 0.7; }
   
-#outer-circle:hover{
-  -webkit-box-shadow: 0 0 100px 15px #21003b;
-  -moz-box-shadow: 0 0 100px 15px #8f18ff;
-  box-shadow: 0 0 100px 15px #7027a4; }
 
+.BARUCH-container img:hover{
+  -webkit-box-shadow: 0 0 100px 15px #00183b;
+  -moz-box-shadow: 0 0 100px 15px #1861ff;
+  box-shadow: 0 0 100px 15px #2748a4; }
+
+  .NYU-container img:hover{
+    
+    -webkit-box-shadow: 0 0 100px 15px #21003b;
+    -moz-box-shadow: 0 0 100px 15px #8f18ff;
+    box-shadow: 0 0 100px 15px #7027a4; }
 
 @-webkit-keyframes aura {
   0%{
@@ -597,8 +603,14 @@ img.Baruch {
     transform: rotate(0deg); }
 }
 
-#outer-circle, #content {
-scale: .5;
+
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -610,7 +622,7 @@ scale: .5;
 .BARUCH-container #main,
 .BARUCH-container img {
   display: flex;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
@@ -618,24 +630,104 @@ scale: .5;
   padding: 0;
   margin: 0;
 }
-.BARUCH-container, .BARUCH-container #main {
+.BARUCH-container, .BARUCH-container #main, .BARUCH-container #outer-circle {
   height: 120px;
   width: 120px;
 }
 
-.BARUCH-container #outer-circle{
+.BARUCH-container {
+  margin-top: 1em;
+}
 
-  top: -3.75rem;
-  left: -3.75rem;
-  right: 0rem;
-  bottom: 0rem;
+.BARUCH-container #main {
+  position: absolute;
+}
+
+.BARUCH-container #outer-circle{
+  position: absolute;
+  top: -.63rem;
+  left: -.62rem;
+  right: 0;
+  bottom: 0;
+  border-top-color:#5350f1;
 }
 
 .BARUCH-container #content {
+  position: absolute;
 
-  top: -1.15rem;
-  left: -1.15rem;
-  right: 0rem;
-  bottom: 0rem;
+}
 
+.BARUCH-container img {
+  position: absolute;
+  top: -1.7rem;
+  left: -1.7rem;
+  scale: .5;
+}
+
+
+
+
+/* NYU reset */
+
+.NYU-container,
+.NYU-container #content, 
+.NYU-container #outer-circle, 
+.NYU-container #main,
+.NYU-container img {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.NYU-container, .NYU-container #main, .NYU-container #outer-circle {
+  height: 120px;
+  width: 120px;
+}
+
+.NYU-container {
+  margin-top: 1em;
+}
+
+.NYU-container #main {
+  position: absolute;
+}
+
+.NYU-container #outer-circle{
+  position: absolute;
+  top: -.63rem;
+  left: -.62rem;
+  right: 0;
+  bottom: 0;
+}
+
+.NYU-container #content {
+  position: absolute;
+}
+
+.NYU-container img {
+  position: absolute;
+  top: -1.7rem;
+  left: -1.7rem;
+  scale: .5;
+}
+
+section.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+section.education > p {
+  margin: 1em 0
+}
+
+#baruch-container img:hover, #nyu-container img:hover {
+  cursor: pointer;
 }
