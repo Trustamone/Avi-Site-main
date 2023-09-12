@@ -15,7 +15,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#employers">Employers</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,7 +32,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#employers" onclick="toggleMenu()">Employers</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -64,12 +64,7 @@
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/abraham-paulino-763b16125/')"
           />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          
         </div>
       </div>
     </section>
@@ -106,7 +101,7 @@
                   <div id="main">
                     <div id="outer-circle"></div>
                     <div id="content">
-                        <img class="Baruch" src="assets/Baruch Logo.jpeg" alt="">
+                        <img class="Baruch" src="assets/baruch-logo.png" alt="">
                     </div>
                   </div>
                </div>
@@ -152,6 +147,95 @@
       onclick="location.href='./#experience'"
     />
     </section>
+
+    <section id="employers" class="hidden">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Employers</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/investing-logo.jpg"
+                alt="Project 2"
+                class="project-img investing-logo"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Investing.com</h2>
+            <div class="btn-container investing-buttons" id="investing-buttons">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=""
+              >
+                Projects
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              id="investing-button"
+            >
+              Show Info
+            </button>
+            </div>
+            <ul id="investing-list" style="display: none;">
+              <li>Owner of global email marketing campaigns for premium subscription products & SaaS applications</li>
+              <li>Implemented SEM and SEO techniques to create marketing strategies that maximized brand visibility across
+                major search engines resulting in a 18% growth in ROI across the department</li>
+              <li>▪ Performed advanced website and digital media analyses using GMP analytics tools such as Google Analytics,
+                DV360, & Ads Data Hub to create original PPC ad content for social and native platforms such as Facebook &
+                Yahoo to drive views, revenue, and generate new leads</li>
+            </ul>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Embassy Logo.png"
+                alt="Project 1"
+                class="project-img embassy-logo"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Embassy</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" id="embassy-button">Show Info</button>
+            </div>
+            <ul id="embassy-list" style="display: none;">
+              <li>Responsible for developing and executing effective marketing strategies across multiple communication
+                channels such as trade shows, marketing collateral, and electronic media such as FB & Clubhouse</li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/one-park-logo.png"
+                alt="Project 3"
+                class="project-img one-park-financial-logo"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">One Park</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" id="one-park-button">Show Info</button>
+            </div>
+            <ul id="one-park-list" style="display: none;">
+              <li>Responsible for all 4th level examination and approvals of SB loans ranging from $10K-$500k</li>
+              <li>Generated, retained, and expanded small business lending relationships to new and existing customers through
+                referrals, centers of influence and direct prospecting with a concentration to small business generating between
+                1 million-10 million annual revenues</li>
+              <li>Served as subject matter expert to a full team in the development of pre-sales proposals, internal trainings, best
+                practices, and technical solution guides</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
     <section id="experience" class="hidden">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
@@ -335,95 +419,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects" class="hidden">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Employers</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Employer One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Employer Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Employer Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#employers'"
       />
     </section>
 
@@ -456,7 +452,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#employers">Employers</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
