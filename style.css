@@ -23,8 +23,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: transparent;
+z-index: 1;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -46,18 +49,21 @@ a,
 nav,
 .nav-links {
   display: flex;
+  z-index: 10;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  z-index: 10;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  z-index: 10;
 }
 
 a {
@@ -75,6 +81,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  z-index: 10;
 }
 
 .logo:hover {
@@ -182,6 +189,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  z-index: 10;
 }
 
 .section__pic-container {
@@ -189,6 +197,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  z-index: 10;
 }
 
 .section__text {
@@ -330,6 +339,12 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.flex-education-logos {
+  display: flex;
+  flex-direction: row;
+  
 }
 
 /* EXPERIENCE SECTION */
@@ -770,4 +785,25 @@ section.education > p {
 
 #baruch-container img:hover, #nyu-container img:hover {
   cursor: pointer;
+}
+
+
+#wrapper{
+  position: relative;
+
+}
+
+.content{
+
+  z-index: 100;
+}
+
+.background{
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
 }
